@@ -2,8 +2,8 @@
 #Febri Ardana
 
 def show_menu(): 
-      berat_sampah = int(input("Masukkan berat sampah anda "))
       print()
+      berat_sampah = int(input("Masukkan berat sampah anda "))
       print(" pilih jenis sampah")
       print(" 1. Sampah plastik ")
       print(" 2. Sampah kertas") 
