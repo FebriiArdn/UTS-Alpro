@@ -1,8 +1,32 @@
-#Program Bank Sampah Sederhana
+#PROGRAM BANK SAMPAH SEDERHANA
 #Febri Ardana
 
+def show_pilihan(): 
+      berat_sampah = int(input("Masukkan berat sampah anda : "))
+      print()
+      print(" pilih jenis sampah")
+      print(" 1. Sampah plastik ")
+      print(" 2. Sampah kertas") 
+      print(" 3. Sampah kaleng")
+      pilihan = int(input("Masukkan jenis sampah"))
+      if pilihan == 1:
+          harga_sampah_tambahan = berat_sampah * 2000
+          print()
+          print("Harga Sampah : ",harga_sampah_tambahan)
+          print()
+      elif pilihan == 2:
+          harga_sampah = berat_sampah * 1500
+          print()
+          print("Harga sampah : ",harga_sampah)
+          print()
+      elif pilihan == 3:
+          harga_sampah = berat_sampah * 3000
+          print()
+          print("Harga sampah : ",harga_sampah)
+          print()
+
 menu = 1
-while menu !=0:
+while menu !=3:
     print()
     print("---Menu Bank Sampah---")
     print("1. Admin")
@@ -18,27 +42,3 @@ while menu !=0:
       show_pilihan()
     elif menu == 3:
         print("TERIMA KASIH TELAH MENGGUNAKAN PROGRAM INI")
-
-def show_pilihan(): 
-      berat_sampah = int(input("Masukkan berat sampah anda "))
-      print()
-      print(" pilih jenis sampah")
-      print(" 1. Sampah plastik ")
-      print(" 2. Sampah kertas") 
-      print(" 3. Sampah kaleng")
-      pilihan = int(input("Masukkan jenis sampah"))
-      if pilihan == 1:
-          harga_sampah_tambahan = berat_sampah * 2000
-          print()
-          print("Harga Sampah: ",harga_sampah_tambahan)
-          print()
-      elif pilihan == 2:
-          harga_sampah = berat_sampah * 1500
-          print()
-          print("Harga sampah: ",harga_sampah)
-          print()
-      elif pilihan == 3:
-          harga_sampah = berat_sampah * 3000
-          print()
-          print("Harga sampah: ",harga_sampah)
-          print()
