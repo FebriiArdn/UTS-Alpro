@@ -1,6 +1,24 @@
 #Program Bank Sampah Sederhana
 #Febri Ardana
 
+menu = 1
+while menu !=0:
+    print()
+    print("---Menu Bank Sampah---")
+    print("1. Admin")
+    print("2. Nasabah ")
+    print("3. exit")
+    print()
+    menu = int(input("Masukkan Nomor Menu: "))
+    if menu == 1:
+        print("Harga Sampah Plastik : 2000")
+        print("Harga Sampah Kertas : 1500")
+        print("Harga Sampah Kaleng : 3000")
+    elif menu == 2:
+      show_pilihan()
+    elif menu == 3:
+        print("TERIMA KASIH TELAH MENGGUNAKAN PROGRAM INI")
+
 def show_pilihan(): 
       berat_sampah = int(input("Masukkan berat sampah anda "))
       print()
@@ -24,21 +42,3 @@ def show_pilihan():
           print()
           print("Harga sampah: ",harga_sampah)
           print()
-
-menu = 1
-while menu !=0:
-    print()
-    print("---Menu Bank Sampah---")
-    print("1. Admin")
-    print("2. Nasabah ")
-    print("3. exit")
-    print()
-    menu = int(input("Masukkan Nomor Menu: "))
-    if menu == 1:
-        print("Harga Sampah Plastik : 2000")
-        print("Harga Sampah Kertas : 1500")
-        print("Harga Sampah Kaleng : 3000")
-    elif menu == 2:
-      show_pilihan()
-    elif menu == 3:
-        print("TERIMA KASIH TELAH MENGGUNAKAN PROGRAM INI")
